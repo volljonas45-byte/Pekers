@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OneDrive sync conflict files
+*-MacBook Air von Jonas.*
+*-MacBook*Jonas*
