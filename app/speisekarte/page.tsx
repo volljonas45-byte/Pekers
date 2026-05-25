@@ -22,7 +22,7 @@ import Footer from "../components/Footer";
 type MenuItem = { name: string; desc?: string; price?: string; price2?: string };
 type Category = {
   title: string;
-  Icon: React.ComponentType<{ size?: number; strokeWidth?: number }>;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement> & { size?: number | string; strokeWidth?: number | string }>;
   items: MenuItem[];
 };
 
@@ -267,7 +267,7 @@ export default function Speisekarte() {
                     className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
                     style={{ background: "#3D6B22" }}
                   >
-                    <cat.Icon size={16} strokeWidth={2} color="#fff" />
+                    <cat.Icon size={16} strokeWidth={2} style={{ color: "#fff" }} />
                   </div>
                   <h2
                     className="text-3xl"

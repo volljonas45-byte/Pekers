@@ -446,7 +446,7 @@ export default function Home() {
                       className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5"
                       style={{ background: "#3D6B22" }}
                     >
-                      <c.Icon size={15} color="#fff" strokeWidth={2} />
+                      <c.Icon size={15} strokeWidth={2} style={{ color: "#fff" }} />
                     </div>
                     <div>
                       <p
