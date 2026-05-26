@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { assetPath } from "@/lib/asset-path";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src={assetPath("/logo.png")}
             alt="Peker's Mediterrane Küche"
             width={130}
             height={60}

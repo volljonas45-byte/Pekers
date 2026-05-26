@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { useState } from "react";
+import { assetPath } from "@/lib/asset-path";
 
 export default function VideoFeature() {
   const [playing, setPlaying] = useState(false);
@@ -59,13 +60,13 @@ export default function VideoFeature() {
                 </button>
               )}
               <video
-                src="/images/kampagnenvideo.mp4"
+                src={assetPath("/images/kampagnenvideo.mp4")}
                 controls={playing}
                 autoPlay={playing}
                 playsInline
                 className="w-full"
                 style={{ aspectRatio: "9/16", objectFit: "cover" }}
-                poster="/images/hero1.png"
+                poster={assetPath("/images/hero1.png")}
               />
             </div>
           </motion.div>

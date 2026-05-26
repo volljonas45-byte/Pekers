@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { assetPath } from "@/lib/asset-path";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/biergarten-abend.jpg"
+          src={assetPath("/biergarten-abend.jpg")}
           alt="Peker's Biergarten"
           fill
           className="object-cover"
@@ -92,7 +93,7 @@ export default function Home() {
               style={{ background: "#F0E8D5" }}
             />
             <Image
-              src="/biergarten-tag.jpg"
+              src={assetPath("/biergarten-tag.jpg")}
               alt="Peker's Biergarten"
               width={600}
               height={420}
@@ -301,7 +302,7 @@ export default function Home() {
       {/* ── CATERING BANNER ── */}
       <section className="relative py-20 px-6 overflow-hidden">
         <Image
-          src="/innenraum.jpg"
+          src={assetPath("/innenraum.jpg")}
           alt="Peker's Innenraum"
           fill
           className="object-cover"

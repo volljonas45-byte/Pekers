@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { assetPath } from "@/lib/asset-path";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Image
-            src="/logo.png"
+            src={assetPath("/logo.png")}
             alt="Peker's Mediterrane Küche"
             width={120}
             height={55}
